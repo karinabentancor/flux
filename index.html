@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>flux</title>
+</head>
+
+  <body>
+        <header>
+            <nav>
+                <ul>
+                   <li><a href="#calendar">CALENDAR</a></li>
+                  <li><a href="#board">BOARD</a></li>
+                  <li><a href="#project-team">PROJECT TEAM</a></li>
+                </ul>
+             </nav>
+        </header>
+
+              <main>
+                <h1>flux</h1>
+            
+                <div class="todo-section">
+                  <div class="todo-list">
+                    <div class="input-container">
+                      <input type="text" id="new-task" placeholder="Add new task...">
+                      <button id="add-task">Add</button>
+                    </div>
+                    <section id="calendar">
+
+                      <section id="board">
+                        <h2>BOARD</h2>
+                        <div class="notes-section">
+                          <div class="lists-container">
+                            <div class="list" id="todo">
+                              <h3>Pending</h3>
+                              <div class="note" draggable="true">something</div>
+                              <div class="note" draggable="true">one task</div>
+                              <div class="note" draggable="true">another</div>
+                            </div>
+                            <div class="list" id="in-progress">
+                              <h3>In Progress</h3>
+                            </div>
+                            <div class="list" id="done">
+                              <h3>Done</h3>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="new-sections">
+                          <div class="list" id="big-section-1">
+                            <h3>Big 1</h3>
+                          </div>
+                          <div class="list" id="big-section-2">
+                            <h3>Big 2</h3>
+                          </div>
+                        </div>
+                        <ul id="task-list"></ul>
+                  </div>
+                </div>
+                </section>
+            
+                <h2>CALENDAR</h2>
+                <div class="navbar">
+                  <div class="logo">//</div>
+                  <div>
+                    <label for="monthSelector"></label>
+                    <select id="monthSelector">
+                      <option value="0">January</option>
+                      <option value="1">February</option>
+                      <option value="2">March</option>
+                      <option value="3">April</option>
+                      <option value="4">May</option>
+                      <option value="5">June</option>
+                      <option value="6">July</option>
+                      <option value="7">August</option>
+                      <option value="8">September</option>
+                      <option value="9">October</option>
+                      <option value="10">November</option>
+                      <option value="11">December</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="calendar-container">
+                  <div class="calendar-header" id="calendarHeader">Month and Year</div>
+                  <div class="weekdays">
+                    <div class="weekday">Sunday</div>
+                    <div class="weekday">Monday</div>
+                    <div class="weekday">Tuesday</div>
+                    <div class="weekday">Wednesday</div>
+                    <div class="weekday">Thursday</div>
+                    <div class="weekday">Friday</div>
+                    <div class="weekday">Saturday</div>
+                  </div>
+                  <div class="calendar-grid" id="calendarGrid">
+                  </div>
+                </div>
+                </section>
+
+              <section id="project-team">
+                  <h2>PROJECT TEAM</h2>
+                  <div class="team-container">
+                    <div class="team-member">
+                      <img src="https://via.placeholder.com/150" alt="Alex Johnson" class="member-photo">
+                      <h3>Alex Johnson</h3>
+                      <p class="role">Frontend Developer</p>
+                      <p class="email">alex.johnson@flux.com</p>
+                      <button class="message-btn" onclick="sendMessage('alex.johnson@flux.com')">Send Message</button>
+                    </div>
+                    <div class="team-member">
+                      <img src="https://via.placeholder.com/150" alt="Sarah Martinez" class="member-photo">
+                      <h3>Sarah Martinez</h3>
+                      <p class="role">Backend Developer</p>
+                      <p class="email">sarah.martinez@flux.com</p>
+                      <button class="message-btn" onclick="sendMessage('sarah.martinez@flux.com')">Send Message</button>
+                    </div>
+                    <div class="team-member">
+                      <img src="https://via.placeholder.com/150" alt="David Chen" class="member-photo">
+                      <h3>David Chen</h3>
+                      <p class="role">Full Stack Developer</p>
+                      <p class="email">david.chen@flux.com</p>
+                      <button class="message-btn" onclick="sendMessage('david.chen@flux.com')">Send Message</button>
+                    </div>
+                    <div class="team-member">
+                      <img src="https://via.placeholder.com/150" alt="Emily Rodriguez" class="member-photo">
+                      <h3>Emily Rodriguez</h3>
+                      <p class="role">DevOps Engineer</p>
+                      <p class="email">emily.rodriguez@flux.com</p>
+                      <button class="message-btn" onclick="sendMessage('emily.rodriguez@flux.com')">Send Message</button>
+                    </div>
+                    <div class="team-member">
+                      <img src="https://via.placeholder.com/150" alt="Michael Thompson" class="member-photo">
+                      <h3>Michael Thompson</h3>
+                      <p class="role">QA Engineer</p>
+                      <p class="email">michael.thompson@flux.com</p>
+                      <button class="message-btn" onclick="sendMessage('michael.thompson@flux.com')">Send Message</button>
+                    </div>
+                    <div class="team-member">
+                      <img src="https://via.placeholder.com/150" alt="Jessica Liu" class="member-photo">
+                      <h3>Jessica Liu</h3>
+                      <p class="role">UI/UX Designer</p>
+                      <p class="email">jessica.liu@flux.com</p>
+                      <button class="message-btn" onclick="sendMessage('jessica.liu@flux.com')">Send Message</button>
+                    </div>
+                  </div>
+                </section>
+              </main>
+        <script src="script.js"></script>
+
+    </body>
+</html>
